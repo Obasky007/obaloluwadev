@@ -51,7 +51,7 @@ export default function Navbar() {
               href="/"
               className="font-display font-semibold text-[19px] md:text-[22px] tracking-tight text-ink flex items-center gap-2"
               data-cursor="link"
-              aria-label="Obaloluwa.dev — home"
+              aria-label="Obaloluwa.dev — studio home"
             >
               <img
                 src="/brand-mark.svg"
@@ -89,7 +89,7 @@ export default function Navbar() {
                 arrow
                 className="hidden sm:inline-flex !px-5 !py-2.5 !text-[13px]"
               >
-                Let's talk
+                Start a project
               </MagneticButton>
 
               <button
@@ -169,7 +169,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
             className="w-full justify-center"
           >
-            Let's talk
+            Start a project
           </MagneticButton>
           <p className="mt-5 font-mono text-[11px] text-muted tracking-widest uppercase">
             {site.availability}

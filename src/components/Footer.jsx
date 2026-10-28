@@ -41,7 +41,9 @@ export default function Footer() {
             >
               Let's make
               <br />
-              something good.
+              something
+              <br />
+              unmistakable.
             </h2>
           </div>
           <div className="flex flex-col gap-3 md:items-end">
@@ -71,7 +73,7 @@ export default function Footer() {
         <div className="grid grid-cols-12 gap-x-6 gap-y-10 py-12 md:py-16">
           {/* Footer nav */}
           <nav className="col-span-12 md:col-span-5" aria-label="Footer">
-            <p className="eyebrow text-cream/50 mb-5">NAVIGATE</p>
+            <p className="eyebrow text-cream/50 mb-5">EXPLORE</p>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-3">
               {nav.map((item) => (
                 <li key={item.href}>
@@ -89,7 +91,7 @@ export default function Footer() {
 
           {/* Socials */}
           <div className="col-span-12 md:col-span-4 md:col-start-7">
-            <p className="eyebrow text-cream/50 mb-5">CONNECT</p>
+            <p className="eyebrow text-cream/50 mb-5">ELSEWHERE</p>
             <ul className="flex flex-col gap-3">
               {site.socials.map((s) => (
                 <li key={s.label}>
@@ -178,7 +180,7 @@ export default function Footer() {
               © {year} OBALOLUWA.DEV
             </p>
             <p className="font-mono text-[11px] tracking-widest uppercase text-cream/40">
-              DESIGNED & BUILT FROM NIGERIA
+              DIGITAL STUDIO · WORKING WORLDWIDE
             </p>
           </div>
 

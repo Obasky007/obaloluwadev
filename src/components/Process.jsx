@@ -12,14 +12,14 @@ const steps = [
     number: '02',
     title: 'Design & Build',
     description:
-      'I shape the experience, develop the interface, and make sure it works across screen sizes.',
+      'We shape the experience, develop the interface, and make sure it works across screen sizes.',
     duration: 'Craft & implementation',
   },
   {
     number: '03',
     title: 'Refine & Launch',
     description:
-      'We test the important details, resolve issues, and prepare the website for launch.',
+      'We test the important details, resolve issues, and prepare the experience for launch.',
     duration: 'Polish & ship',
   },
 ]
@@ -32,7 +32,7 @@ export default function Process() {
         <div className="grid grid-cols-12 gap-x-6 gap-y-8 mb-16 md:mb-24">
           <Reveal className="col-span-12 md:col-span-8">
             <span className="eyebrow eyebrow-accent mb-5 block">
-              03 / HOW I WORK
+              03 / THE STUDIO METHOD
             </span>
             <h2
               className="font-display font-medium text-ink tracking-tight"

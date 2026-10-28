@@ -17,7 +17,7 @@ export default function ContactCTA() {
         {/* Header */}
         <Reveal className="mb-12 md:mb-16">
           <span className="eyebrow eyebrow-accent">
-            05 / HAVE SOMETHING IN MIND?
+            05 / MAKE THE NEXT MOVE
           </span>
         </Reveal>
 
@@ -31,11 +31,11 @@ export default function ContactCTA() {
               letterSpacing: "-0.03em",
             }}
           >
-            Let's build
+            Make the next
             <br />
-            something worth
+            digital move
             <br />
-            <span className="hand-underline">remembering</span>.
+            <span className="hand-underline">count</span>.
           </h2>
         </Reveal>
 
@@ -43,8 +43,7 @@ export default function ContactCTA() {
         <div className="mt-12 md:mt-20 grid grid-cols-12 gap-x-6 gap-y-10">
           <Reveal className="col-span-12 md:col-span-7" delay={150}>
             <p className="font-body text-[16px] md:text-[19px] leading-[1.55] text-muted-2 max-w-xl">
-              Have a business, product, or idea that needs a better online
-              experience? Tell me what you're working on.
+              Have a business, product, or idea that needs a clearer online presence? Share the brief and the studio will come back with a useful next step.
             </p>
 
             <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-4">
@@ -57,15 +56,21 @@ export default function ContactCTA() {
                   arrow
                   className="!px-7 !py-3.5 !text-[15px]"
                 >
-                  Let's discuss your project
+                  Start a studio conversation
                 </MagneticButton>
               ) : (
-                <span
-                  className="inline-flex items-center justify-center rounded-full border border-dashed border-ink/25 px-7 py-3.5 text-[15px] font-display font-medium text-muted"
-                  title="Configure an email address in src/data/site.js"
+                <MagneticButton
+                  href="https://github.com/Obasky007/obaloluwadev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="primary"
+                  strength={0.45}
+                  innerStrength={0.7}
+                  arrow
+                  className="!px-7 !py-3.5 !text-[15px]"
                 >
-                  Email address not configured
-                </span>
+                  View the studio on GitHub
+                </MagneticButton>
               )}
 
               {whatsappHref ? (
@@ -81,14 +86,8 @@ export default function ContactCTA() {
                 >
                   WhatsApp me
                 </MagneticButton>
-              ) : (
-                <span
-                  className="inline-flex items-center justify-center rounded-full border border-dashed border-ink/25 px-7 py-3.5 text-[15px] font-display font-medium text-muted"
-                  title="WhatsApp number not yet configured"
-                >
-                  WhatsApp me — coming soon
-                </span>
-              )}
+              ) : null}
+
             </div>
           </Reveal>
 
@@ -98,7 +97,7 @@ export default function ContactCTA() {
             delay={250}
           >
             <div>
-              <p className="eyebrow text-muted mb-2">CURRENT STATUS</p>
+              <p className="eyebrow text-muted mb-2">STUDIO STATUS</p>
               <p className="font-body text-[15px] text-ink-soft">
                 {site.availability}
               </p>
@@ -110,9 +109,9 @@ export default function ContactCTA() {
               </p>
             </div>
             <div>
-              <p className="eyebrow text-muted mb-2">RESPONSE TIME</p>
+              <p className="eyebrow text-muted mb-2">WORKING RHYTHM</p>
               <p className="font-body text-[15px] text-ink-soft">
-                Usually within 24 hours
+                Replies usually within 24 hours
               </p>
             </div>
           </Reveal>

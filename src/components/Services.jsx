@@ -32,15 +32,15 @@ export default function Services() {
         <div className="grid grid-cols-12 gap-x-6 gap-y-8 mb-16 md:mb-24">
           <Reveal className="col-span-12 md:col-span-7">
             <span className="eyebrow eyebrow-accent mb-5 block">
-              02 / WHAT I DO
+              02 / STUDIO CAPABILITIES
             </span>
             <h2
               className="font-display font-medium text-ink tracking-tight"
               style={{ fontSize: 'clamp(2.2rem, 5vw, 4.5rem)', lineHeight: 1 }}
             >
-              Good websites
+              Good digital work
               <br />
-              have a job to do.
+              has a job to do.
             </h2>
           </Reveal>
           <Reveal
@@ -48,8 +48,7 @@ export default function Services() {
             delay={120}
           >
             <p className="font-body text-[15px] md:text-[16px] leading-[1.55] text-muted-2 max-w-sm">
-              I combine thoughtful design with practical frontend development
-              to create digital experiences that serve a real purpose.
+              The studio combines brand thinking, interface design, and practical frontend development to create digital experiences with a clear job to do.
             </p>
           </Reveal>
         </div>
@@ -79,7 +78,7 @@ export default function Services() {
                   </h3>
                   {/* arrow */}
                   <span className="service-arrow mt-4 inline-flex items-center gap-2 font-mono text-[11px] tracking-widest uppercase text-accent">
-                    DISCUSS THIS
+                    EXPLORE THE FIT
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                       <path
                         d="M3.5 10.5L10.5 3.5M10.5 3.5H4.5M10.5 3.5V9.5"

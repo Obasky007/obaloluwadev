@@ -14,7 +14,7 @@ export default function App() {
   const path = window.location.pathname.replace(/\/+$/, "") || "/";
   const pages = {
     "/": {
-      title: "Obaloluwa.dev — Frontend Developer & Web Designer",
+      title: "Obaloluwa.dev — Digital studio for thoughtful web experiences",
       content: (
         <>
           <Hero />
@@ -24,15 +24,15 @@ export default function App() {
       ),
     },
     "/work": {
-      title: "Selected Work — Obaloluwa.dev",
+      title: "Selected Work — Obaloluwa.dev Studio",
       content: (
         <>
           <PageHero
             eyebrow="01 / SELECTED WORK"
-            title="A little proof in the pudding."
-            description="Websites and digital experiences, made to look good and do useful things."
+            title="Proof, not promises."
+            description="A selection of brand-led websites and digital experiences built to make good ideas easier to understand, trust, and act on."
             image="/project-calcpro.jpg"
-            imageAlt="CalcPro live website preview"
+            imageAlt="CalcPro interactive web application preview"
             stamp="BUILT TO BE USED"
             index="01"
           />
@@ -41,15 +41,15 @@ export default function App() {
       ),
     },
     "/about": {
-      title: "About — Obaloluwa.dev",
+      title: "Studio — Obaloluwa.dev",
       content: (
         <>
           <PageHero
-            eyebrow="02 / THE PERSON BEHIND THE PIXELS"
-            title="Curious by design. Careful by build."
-            description="A frontend developer and designer in Nigeria, working with people who want to make something meaningful online."
+            eyebrow="02 / THE STUDIO"
+            title="A small studio with a sharp point of view."
+            description="Obaloluwa.dev creates clear, expressive websites and web experiences for ambitious businesses, products, and teams working worldwide."
             image="/project-octagon.jpg"
-            imageAlt="Octagon technology website preview"
+            imageAlt="Octagon Omega information-led web experience preview"
             stamp="DETAILS MATTER"
             index="02"
           />
@@ -60,16 +60,16 @@ export default function App() {
       ),
     },
     "/contact": {
-      title: "Contact — Obaloluwa.dev",
+      title: "Start a Project — Obaloluwa.dev",
       content: (
         <>
           <PageHero
-            eyebrow="03 / LET'S MAKE A GOOD THING"
-            title="Got a good idea? Let's give it a home."
-            description="Tell me what you're working on, what needs to change, or what you'd love to bring to life."
+            eyebrow="03 / START A PROJECT"
+            title="Bring the good idea. We’ll shape the experience."
+            description="Share the challenge, the ambition, or the rough direction. Obaloluwa.dev works with teams and businesses worldwide to make digital experiences clearer and more useful."
             image="/project-chapel.jpg"
-            imageAlt="Chapel of Grace community website preview"
-            stamp="MADE FOR PEOPLE"
+            imageAlt="Chapel of Grace community platform preview"
+            stamp="MADE TO MOVE"
             index="03"
           />
           <ContactCTA />

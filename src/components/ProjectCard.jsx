@@ -38,7 +38,7 @@ function ProjectVisual({ project, ratio }) {
             <img
               className="project-preview-fallback"
               src={project.image}
-              alt=""
+              alt={`${project.title} project preview`}
               loading="lazy"
               decoding="async"
             />
@@ -586,7 +586,7 @@ export default function Projects({ featured = false }) {
           <p className="font-body text-[14px] md:text-[15px] text-muted-2 max-w-xs md:text-right">
             {featured
               ? "A few recent websites and digital experiences."
-              : "Websites and digital experiences I've designed or built."}
+              : "Websites and digital experiences built to make good ideas clearer."}
           </p>
         </Reveal>
 

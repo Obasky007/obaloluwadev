@@ -1,31 +1,27 @@
 // ---------------------------------------------------------------------------
-// Obaloluwa.dev — Site-wide configuration
-// Edit these values to configure contact details, social links, and projects.
+// Obaloluwa.dev — Studio configuration
 // ---------------------------------------------------------------------------
 
 export const site = {
   name: 'Obaloluwa.dev',
-  role: 'Independent Frontend Developer & Web Designer',
+  role: 'Independent digital studio for thoughtful websites and web experiences',
   location: 'Nigeria',
-  availability: 'Available for select projects · Working worldwide',
-  canonical: 'https://obaloluwa.dev/',
-  // Configure these once you have real contact details.
+  availability: 'Open for selected partnerships · Working worldwide',
+  canonical: 'https://obaloluwadev.vercel.app/',
   contact: {
-    email: '', // e.g. 'hello@obaloluwa.dev' — leave empty until configured
-    whatsapp: '', // e.g. '2348000000000' — international format, no '+'
-    whatsappMessage: "Hi Obaloluwa, I'd like to discuss a project.",
+    email: '',
+    whatsapp: '',
+    whatsappMessage: "Hi Obaloluwa.dev, I'd like to discuss a project.",
   },
   socials: [
-    { label: 'GitHub', url: '', handle: '@obaloluwa' },
-    { label: 'LinkedIn', url: '', handle: '/in/obaloluwa' },
-    { label: 'Instagram', url: '', handle: '@obaloluwa.dev' },
+    { label: 'GitHub', url: 'https://github.com/Obasky007/obaloluwadev', handle: '@Obasky007' },
   ],
 }
 
 export const nav = [
-  { label: 'Home', href: '/' },
+  { label: 'Studio', href: '/about' },
   { label: 'Work', href: '/work' },
-  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/about#services' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -34,24 +30,23 @@ export const projects = [
     id: 'sunlight-royale',
     number: '01',
     title: 'Sunlight Royale Events Centre',
-    category: 'Business Website',
+    category: 'Brand-led business website',
     description:
-      'An event venue website designed to present the space, communicate its offering, and help potential customers explore the venue.',
+      'A confident digital home for an events venue, built to make the offer clear, the space memorable, and the next enquiry obvious.',
     url: 'https://sunlightroyaleeventscentre.vercel.app/',
     preview: false,
-    // Visual is generated as a CSS composition; palette reflects brand context.
     accent: '#E53935',
     palette: ['#F7F4ED', '#E8E3D9', '#171717'],
-    ratio: 'tall', // tall | wide | square
+    ratio: 'tall',
     year: '2024',
   },
   {
     id: 'amala-toh-sure',
     number: '02',
     title: 'Amala Toh Sure',
-    category: 'Food & Hospitality',
+    category: 'Food & hospitality experience',
     description:
-      'A digital presence for a food business, designed to make the offering easier to explore and understand.',
+      'A warm, easy-to-explore web presence that brings the food, personality, and ordering journey closer together.',
     url: 'https://amalatohsure.vercel.app/',
     image: '/project-amala.jpg',
     accent: '#C8651B',
@@ -63,9 +58,9 @@ export const projects = [
     id: 'calcpro',
     number: '03',
     title: 'CalcPro',
-    category: 'Web Application',
+    category: 'Interactive web application',
     description:
-      'A calculator-focused web application demonstrating interactive frontend functionality and practical utility.',
+      'A practical calculator experience focused on clear feedback, responsive interaction, and useful everyday utility.',
     url: 'https://calcpro-alpha.vercel.app/',
     image: '/project-calcpro.jpg',
     accent: '#2563EB',
@@ -77,9 +72,9 @@ export const projects = [
     id: 'cog-testimonies',
     number: '04',
     title: 'Chapel of Grace Testimonies',
-    category: 'Community Platform',
+    category: 'Community platform',
     description:
-      'A testimony-sharing experience that helps a church community submit and explore personal testimonies online.',
+      'A considered testimony-sharing experience that helps a community submit, discover, and celebrate personal stories online.',
     url: 'https://cogtestimonies.vercel.app/',
     image: '/project-chapel.jpg',
     accent: '#7C5CFF',
@@ -91,9 +86,9 @@ export const projects = [
     id: 'octagon-omega',
     number: '05',
     title: 'Octagon Omega',
-    category: 'Web Experience',
+    category: 'Information-led web experience',
     description:
-      'A digital project exploring the presentation of services and information through a dedicated web experience.',
+      'A focused digital experience for presenting services and information with clarity, confidence, and visual rhythm.',
     url: 'https://octagon-omega.vercel.app/',
     image: '/project-octagon.jpg',
     accent: '#0F766E',
@@ -105,9 +100,9 @@ export const projects = [
     id: '3d-interiors',
     number: '06',
     title: '3D Interiors',
-    category: 'Interior Design Concept',
+    category: 'Spatial design concept',
     description:
-      'An interior design concept focused on presenting spaces, services, and visualisation capabilities.',
+      'A visual-first concept for presenting spaces, services, and interior visualisation work with atmosphere and intent.',
     url: 'https://3dinteriors.vercel.app/',
     image: '/project-interiors.jpg',
     accent: '#9A7B4F',
