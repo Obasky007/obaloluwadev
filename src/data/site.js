@@ -4,9 +4,9 @@
 
 export const site = {
   name: 'Obaloluwa.dev',
-  role: 'Independent digital studio for thoughtful websites and web experiences',
+  role: 'A playful web studio for businesses that need a website',
   location: 'Nigeria',
-  availability: 'Open for selected partnerships · Working worldwide',
+  availability: 'Taking website projects · Working worldwide',
   canonical: 'https://obaloluwadev.vercel.app/',
   contact: {
     email: '',

@@ -7,22 +7,22 @@
 
 @theme {
   /* Brand palette */
-  --color-cream: #f7f4ed;
-  --color-cream-2: #f1ece1;
+  --color-cream: #fff9ef;
+  --color-cream-2: #ffe7c2;
   --color-paper: #ffffff;
   --color-ink: #171717;
   --color-ink-soft: #2a2a28;
-  --color-accent: #e53935;
-  --color-accent-deep: #b82724;
+  --color-accent: #ff4d3d;
+  --color-accent-deep: #d92f2f;
   --color-neutral-200: #e8e3d9;
   --color-neutral-300: #d8d2c4;
   --color-muted: #77736d;
   --color-muted-2: #5a564f;
 
   /* Typography */
-  --font-display: 'DM Serif Display', Georgia, serif;
-  --font-body: 'Manrope', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
 
   /* Easing curves */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -107,6 +107,51 @@ body::before {
   z-index: 1;
 }
 
+/* Playful studio details */
+.studio-sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  background: #f3d957;
+  border: 2px solid var(--color-ink);
+  border-radius: 999px;
+  box-shadow: 4px 4px 0 var(--color-ink);
+  color: var(--color-ink);
+  transform: rotate(-4deg);
+}
+
+.studio-sticker-blue {
+  background: #85d8ff;
+  transform: rotate(4deg);
+}
+
+.hero-playful-note {
+  position: absolute;
+  right: 5%;
+  top: 18%;
+  max-width: 150px;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  line-height: 1;
+  transform: rotate(7deg);
+}
+
+.hero-playful-note::after {
+  content: '↘';
+  display: block;
+  margin-top: 8px;
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .hero-playful-note { display: none; }
+}
+
+
 main {
   position: relative;
   z-index: 1;
@@ -143,8 +188,8 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  font-weight: 400;
-  letter-spacing: -0.025em;
+  font-weight: 600;
+  letter-spacing: -0.045em;
   line-height: 1.02;
   color: var(--color-ink);
   margin: 0;
@@ -311,10 +356,10 @@ a {
   overflow: hidden;
   aspect-ratio: 4 / 3;
   border: 5px solid var(--color-paper);
-  border-radius: 8px;
+  border-radius: 18px;
   background: var(--color-neutral-200);
   box-shadow: 8px 10px 0 rgba(229, 57, 53, 0.14);
-  transform: rotate(2deg);
+  transform: rotate(3deg);
   animation: playful-float 5s ease-in-out infinite alternate;
 }
 
@@ -336,7 +381,7 @@ a {
   color: var(--color-ink);
   background: var(--color-cream);
   border: 1px solid rgba(23, 23, 23, 0.12);
-  border-radius: 3px;
+  border-radius: 999px;
   font-family: var(--font-mono);
   font-size: 9px;
   letter-spacing: 0.08em;
@@ -382,7 +427,7 @@ a {
   object-fit: cover;
   object-position: top;
   border: 5px solid var(--color-paper);
-  border-radius: 8px;
+  border-radius: 18px;
   box-shadow: 0 14px 32px rgba(23, 23, 23, 0.12);
 }
 
@@ -395,7 +440,7 @@ a {
   color: var(--color-ink);
   background: #f3d16b;
   border: 1px solid rgba(23, 23, 23, 0.12);
-  border-radius: 3px;
+  border-radius: 999px;
   font-family: var(--font-mono);
   font-size: 9px;
   letter-spacing: 0.1em;

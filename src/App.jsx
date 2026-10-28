@@ -14,7 +14,7 @@ export default function App() {
   const path = window.location.pathname.replace(/\/+$/, "") || "/";
   const pages = {
     "/": {
-      title: "Obaloluwa.dev — Digital studio for thoughtful web experiences",
+      title: "Obaloluwa.dev — We make websites people remember",
       content: (
         <>
           <Hero />

@@ -38,9 +38,9 @@ export default function Services() {
               className="font-display font-medium text-ink tracking-tight"
               style={{ fontSize: 'clamp(2.2rem, 5vw, 4.5rem)', lineHeight: 1 }}
             >
-              Good digital work
+              Websites that do a job
               <br />
-              has a job to do.
+              should earn its place.
             </h2>
           </Reveal>
           <Reveal
