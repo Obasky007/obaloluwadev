@@ -578,9 +578,9 @@ export default function Projects({ featured = false }) {
               className="font-display font-medium text-ink tracking-tight"
               style={{ fontSize: "clamp(2.2rem, 5vw, 4.5rem)", lineHeight: 1 }}
             >
-              Some things I've
+              Selected work
               <br />
-              brought to life.
+              with a point of view.
             </h2>
           </div>
           <p className="font-body text-[14px] md:text-[15px] text-muted-2 max-w-xs md:text-right">

@@ -93,61 +93,20 @@ export default function Footer() {
           <div className="col-span-12 md:col-span-4 md:col-start-7">
             <p className="eyebrow text-cream/50 mb-5">ELSEWHERE</p>
             <ul className="flex flex-col gap-3">
-              {site.socials.map((s) => (
+              {site.socials.filter((s) => s.url && s.url.length > 0).map((s) => (
                 <li key={s.label}>
-                  {s.url && s.url.length > 0 ? (
-                    <a
-                      href={s.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group inline-flex items-baseline gap-2 font-body text-[15px] text-cream/85 hover:text-cream"
-                      data-cursor="link"
-                    >
-                      <span className="link-underline">{s.label}</span>
-                      <span className="font-mono text-[10px] tracking-widest uppercase text-cream/40 group-hover:text-accent transition-colors">
-                        ↗
-                      </span>
-                    </a>
-                  ) : (
-                    <span
-                      className="inline-flex items-baseline gap-2 font-body text-[15px] text-cream/40 italic"
-                      title={`${s.label} not yet configured`}
-                    >
-                      {s.label}
-                      <span className="font-mono text-[10px] tracking-widest uppercase text-cream/30">
-                        — soon
-                      </span>
-                    </span>
-                  )}
-                </li>
-              ))}
-              {/* WhatsApp placeholder */}
-              <li>
-                {whatsappHref ? (
                   <a
-                    href={whatsappHref}
+                    href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-baseline gap-2 font-body text-[15px] text-cream/85 hover:text-cream"
                     data-cursor="link"
                   >
-                    <span className="link-underline">WhatsApp</span>
-                    <span className="font-mono text-[10px] tracking-widest uppercase text-cream/40 group-hover:text-accent transition-colors">
-                      ↗
-                    </span>
+                    <span className="link-underline">{s.label}</span>
+                    <span className="font-mono text-[10px] tracking-widest uppercase text-cream/40 group-hover:text-accent transition-colors">↗</span>
                   </a>
-                ) : (
-                  <span
-                    className="inline-flex items-baseline gap-2 font-body text-[15px] text-cream/40 italic"
-                    title="WhatsApp not yet configured"
-                  >
-                    WhatsApp
-                    <span className="font-mono text-[10px] tracking-widest uppercase text-cream/30">
-                      — soon
-                    </span>
-                  </span>
-                )}
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -167,7 +126,7 @@ export default function Footer() {
                 className="font-body text-[15px] text-cream/40 italic"
                 title="Email not yet configured"
               >
-                Not yet configured
+                Direct contact on request
               </span>
             )}
           </div>
